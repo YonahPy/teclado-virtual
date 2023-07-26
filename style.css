@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+
+
+
+mian{
+    width: 100vw;
+    height: 100vh;
+}
+
+div{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 1150px;
+}
