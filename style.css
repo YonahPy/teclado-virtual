@@ -15,6 +15,87 @@ div{
 }
 .keyboard{
     display: grid;
+    padding: 30px;
+    border-radius: 10px;
+    gap: 7px;
     
 }
-.fileira1, .filera2
+
+.fileira1{
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+}
+#backspace{
+    width: 120px;
+}
+
+.fileira1 > div{
+    width: 40px;
+    background-color: green;
+    border: 2px solid white;
+    width: 60px;
+    height: 50px;
+    
+}
+
+.fileira2{
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+}
+
+#tab{
+    
+    width: 80px;
+    margin-right: 11px;
+}
+
+#enter{
+    display: grid;
+    grid-row: span2;
+    grid-column: span2;
+}
+
+.fileira2 > div{
+    width: 40px;
+    background-color: green;
+    border: 2px solid white;
+    width: 60px;
+    height: 50px;
+}
+
+.fileira3{
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+}
+
+.fileira3 > div{
+    width: 40px;
+    background-color: green;
+    border: 2px solid white;
+    width: 60px;
+    height: 50px;
+}
+
+.fileira4{
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+}
+
+.fileira4 > div{
+    width: 60px;
+    height: 50px;
+    background-color: green;
+    border: 2px solid white;
+}
+.fileira5{
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+}
+
+.fileira5 > div{
+    width: 40px;
+    background-color: green;
+    border: 2px solid white;
+    width: 60px;
+    height: 50px;
+}
