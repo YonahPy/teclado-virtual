@@ -13,3 +13,8 @@ div{
     color: white;
     width: 1150px;
 }
+.keyboard{
+    display: grid;
+    
+}
+.fileira1, .filera2
