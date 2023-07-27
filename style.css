@@ -2,24 +2,59 @@
 
 
 
+:root{
+    --verde: #539987;
+    --verde-forte: #004643;
+    --rosa: #ff499e;
+    --rosa-forte: #d81159;
+    --vermelho: #BF211E;
+    --vinho: #6B0F1A;
+    --amarelo: #ffbc42;
+    --dourado: #d1ac00;
+    --azul: #0091ad;
+    --azul-forte: #22577A;
+    --branco: #e6e6e6;
+    --roxo: #541388;
+}
+
 
 main{
     width: 100vw;
     height: 100vh;
 }
 
-div{
-    background-color: rgb(0, 0, 0);
-    color: white;
-    width: 1150px;
-}
+
 .keyboard{
     display: grid;
-    padding: 30px;
+    background-color: rgb(0, 0, 0);
+    width: 1150px;
+    padding: 30px 40px;
     border-radius: 10px;
     gap: 7px;
-    
+      
 }
+.fileira1 > div, .fileira2 > div, .fileira3 > div, .fileira4 > div, .fileira5 > div{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: var(--rosa-forte);
+    border: 3px solid var(--rosa-forte);
+    filter: drop-shadow(0px 0px 50px var(--rosa-forte));
+    border-radius: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+    
+
+}
+
+.fileira1 > div:hover, .fileira2 > div:hover, .fileira3 > div:hover, .fileira4 > div:hover, .fileira5 > div:hover{
+    border: 2px solid #570624;
+    color: #570624;
+}
+
+
 
 .fileira1{
     display: grid;
@@ -30,10 +65,8 @@ div{
 }
 
 .fileira1 > div{
-    width: 40px;
-    background-color: green;
-    border: 2px solid white;
-    width: 60px;
+    
+    width: 65px;
     height: 50px;
     
 }
@@ -50,29 +83,38 @@ div{
 }
 
 #enter{
-    display: grid;
-    grid-row: span2;
-    grid-column: span2;
+    display: flex;
+    position: absolute;
+    justify-self: flex-end;
+    height: 112px;
+    width: 85px;
+    z-index: 1;
+    margin-right: 0px;
+    
+}
+#enter > p{
+    margin: auto;
 }
 
 .fileira2 > div{
-    width: 40px;
-    background-color: green;
-    border: 2px solid white;
-    width: 60px;
+    width: 70px;
     height: 50px;
 }
 
 .fileira3{
     display: grid;
     grid-template-columns: repeat(14, 1fr);
+    position: relative;
 }
 
+#caps{
+    width: 100px;
+    margin-right: 11px;
+}
+
+
 .fileira3 > div{
-    width: 40px;
-    background-color: green;
-    border: 2px solid white;
-    width: 60px;
+    width: 70px;
     height: 50px;
 }
 
@@ -81,21 +123,36 @@ div{
     grid-template-columns: repeat(15, 1fr);
 }
 
+#shift{
+    width: 90px;
+    margin-right: 11px;
+}
+#shift2{
+    width: 80px;
+    margin-top: 2px;
+}
+
 .fileira4 > div{
-    width: 60px;
+    width: 67px;
     height: 50px;
-    background-color: green;
-    border: 2px solid white;
+
 }
 .fileira5{
     display: grid;
     grid-template-columns: repeat(15, 1fr);
+    column-gap: 7px;
 }
 
+#space{
+    width: 355px;
+    font-size: xx-large;
+    
+}
+
+
+
 .fileira5 > div{
-    width: 40px;
-    background-color: green;
-    border: 2px solid white;
-    width: 60px;
+    
+    width: 65px;
     height: 50px;
 }
