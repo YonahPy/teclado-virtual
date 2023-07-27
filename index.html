@@ -13,90 +13,100 @@
         <button>Teclado Virtual</button>
         <div class="keyboard">
            <div class="fileira1">
-                <div>Esc</div>
-                <div>'</div>
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
-                <div>5</div>
-                <div>6</div>
-                <div>7</div>
-                <div>8</div>
-                <div>9</div>
-                <div>0</div>
-                <div>-</div>
-                <div>=</div>
-                <div id="backspace">&#x232B;</div>
+                <div class="key" onclick="pressKey(this)">Esc</div>
+                <div class="key" onclick="pressKey(this)">'</div>
+                <div class="key" onclick="pressKey(this)">1</div>
+                <div class="key" onclick="pressKey(this)">2</div>
+                <div class="key" onclick="pressKey(this)">3</div>
+                <div class="key" onclick="pressKey(this)">4</div>
+                <div class="key" onclick="pressKey(this)">5</div>
+                <div class="key" onclick="pressKey(this)">6</div>
+                <div class="key" onclick="pressKey(this)">7</div>
+                <div class="key" onclick="pressKey(this)">8</div>
+                <div class="key" onclick="pressKey(this)">9</div>
+                <div class="key" onclick="pressKey(this)">0</div>
+                <div class="key" onclick="pressKey(this)">-</div>
+                <div class="key" onclick="pressKey(this)">=</div>
+                <div id="backspace" class="key" onclick="pressKey(this)">&#x232B;</div> 
            </div> 
 
            <div class="fileira2">
-                <div id="tab">Tab</div>
-                <div>q</div>
-                <div>w</div>
-                <div>e</div>
-                <div>r</div>
-                <div>t</div>
-                <div>y</div>
-                <div>u</div>
-                <div>i</div>
-                <div>o</div>
-                <div>p</div>
-                <div>´</div>
-                <div>[</div>
-                <div id="enter"><p>Enter</p></div>
+                <div id="tab" class="key" onclick="pressKey(this)">Tab</div>
+                <div class="key" onclick="pressKey(this)">q</div>
+                <div class="key" onclick="pressKey(this)">w</div>
+                <div class="key" onclick="pressKey(this)">e</div>
+                <div class="key" onclick="pressKey(this)">r</div>
+                <div class="key" onclick="pressKey(this)">t</div>
+                <div class="key" onclick="pressKey(this)">y</div>
+                <div class="key" onclick="pressKey(this)">u</div>
+                <div class="key" onclick="pressKey(this)">i</div>
+                <div class="key" onclick="pressKey(this)">o</div>
+                <div class="key" onclick="pressKey(this)">p</div>
+                <div class="key" onclick="pressKey(this)">´</div>
+                <div class="key" onclick="pressKey(this)">[</div>
+                <div id="enter" class="key" onclick="pressKey(this)"><p>Enter</p></div>
            </div>
 
            <div class="fileira3">
-                <div id="caps">Caps</div>
-                <div>a</div>
-                <div>s</div>
-                <div>d</div>
-                <div>f</div>
-                <div>g</div>
-                <div>h</div>
-                <div>j</div>
-                <div>k</div>
-                <div>l</div>
-                <div>ç</div>
-                <div>~</div>
-                <div>]</div>
+                <div id="caps" class="key" onclick="pressKey(this)">Caps</div>
+                <div class="key" onclick="pressKey(this)">a</div>
+                <div class="key" onclick="pressKey(this)">s</div>
+                <div class="key" onclick="pressKey(this)">d</div>
+                <div class="key" onclick="pressKey(this)">f</div>
+                <div class="key" onclick="pressKey(this)">g</div>
+                <div class="key" onclick="pressKey(this)">h</div>
+                <div class="key" onclick="pressKey(this)">j</div>
+                <div class="key" onclick="pressKey(this)">k</div>
+                <div class="key" onclick="pressKey(this)">l</div>
+                <div class="key" onclick="pressKey(this)">ç</div>
+                <div class="key" onclick="pressKey(this)">~</div>
+                <div class="key" onclick="pressKey(this)">]</div>
             
            </div>
 
            <div class="fileira4">
-                <div id="shift">Shift</div>
-                <div>\</div>
-                <div>z</div>
-                <div>x</div>
-                <div>c</div>
-                <div>v</div>
-                <div>b</div>
-                <div>n</div>
-                <div>m</div>
-                <div>,</div>
-                <div>.</div>
-                <div>;</div>
-                <div>↑</div>
-                <div>/</div>
-                <div id="shift2">Shift</div>
+                <div id="shift" class="key" onclick="pressKey(this)">Shift</div>
+                <div class="key" onclick="pressKey(this)">\</div>
+                <div class="key" onclick="pressKey(this)">z</div>
+                <div class="key" onclick="pressKey(this)">x</div>
+                <div class="key" onclick="pressKey(this)">c</div>
+                <div class="key" onclick="pressKey(this)">v</div>
+                <div class="key" onclick="pressKey(this)">b</div>
+                <div class="key" onclick="pressKey(this)">n</div>
+                <div class="key" onclick="pressKey(this)">m</div>
+                <div class="key" onclick="pressKey(this)">,</div>
+                <div class="key" onclick="pressKey(this)">.</div>
+                <div class="key" onclick="pressKey(this)">;</div>
+                <div class="key" onclick="pressKey(this)">↑</div>
+                <div class="key" onclick="pressKey(this)">/</div>
+                <div id="shift2" class="key" onclick="pressKey(this)">Shift</div>
            </div>
 
            <div class="fileira5">
-                <div>Fn</div>
-                <div>Ctrl</div>
-                <div>⊞</div>
-                <div>Alt</div>
-                <div id="space">&#9251;</div>
-                <div>Alt</div>
-                <div>Del</div>
-                <div>Ctrl</div>
-                <div>←</div>
-                <div>↓</div>
-                <div>→</div>
-                <div id="tarefas">&#x2398;</div>
+                <div class="key" onclick="pressKey(this)">Fn</div>
+                <div class="key" onclick="pressKey(this)">Ctrl</div>
+                <div class="key" onclick="pressKey(this)">⊞</div>
+                <div class="key" onclick="pressKey(this)">Alt</div>
+                <div id="space" class="key" onclick="pressKey(this)">&#9251;</div>
+                <div class="key" onclick="pressKey(this)">Alt</div>
+                <div class="key" onclick="pressKey(this)">Del</div>
+                <div class="key" onclick="pressKey(this)">Ctrl</div>
+                <div class="key" onclick="pressKey(this)">←</div>
+                <div class="key" onclick="pressKey(this)">↓</div>
+                <div class="key" onclick="pressKey(this)">→</div>
+                <div id="tarefas" class="key" onclick="pressKey(this)">&#x2398;</div>
            </div>
         </div>
     </main>
+    <script>
+     function pressKey(element) {
+     element.classList.add('pressed');
+     setTimeout(() => {
+          element.classList.remove('pressed');
+  }, 100); 
+}
+
+     
+    </script>
 </body>
 </html>

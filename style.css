@@ -24,6 +24,9 @@ main{
 }
 
 
+
+
+
 .keyboard{
     display: grid;
     background-color: rgb(0, 0, 0);
@@ -50,11 +53,13 @@ main{
 }
 
 .fileira1 > div:hover, .fileira2 > div:hover, .fileira3 > div:hover, .fileira4 > div:hover, .fileira5 > div:hover{
-    border: 2px solid #570624;
-    color: #570624;
+    border: 2px solid var(--vermelho);
+    color: var(--vermelho);
 }
 
-
+.key.pressed {
+    transform: scale(0.95);
+  }
 
 .fileira1{
     display: grid;
@@ -156,3 +161,12 @@ main{
     width: 65px;
     height: 50px;
 }
+
+
+  
+  
+  
+  
+  
+  
+  
