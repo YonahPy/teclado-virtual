@@ -17,3 +17,282 @@
     --roxo: #541388;
 }
 
+
+main{
+    
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+
+
+.keyboard{
+    display: grid;
+    background-color: rgb(0, 0, 0);
+    width: 80%;
+    max-width: 1150px;
+    padding: 30px 70px 30px 40px;
+    border-radius: 10px;
+    gap: 7px;
+    margin: auto;
+      
+}
+.fileira1 > div, .fileira2 > div, .fileira3 > div, .fileira4 > div, .fileira5 > div{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: var(--rosa-forte);
+    border: 3px solid var(--rosa-forte);
+    filter: drop-shadow(0px 0px 50px var(--rosa-forte));
+    border-radius: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+    
+
+}
+
+.fileira1 > div:hover, .fileira2 > div:hover, .fileira3 > div:hover, .fileira4 > div:hover, .fileira5 > div:hover{
+    border: 2px solid var(--vermelho);
+    color: var(--vermelho);
+}
+
+.key.pressed {
+    transform: scale(0.95);
+  }
+
+.fileira1{
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    
+    
+}
+#backspace{
+
+    width: 7vw;
+}
+
+
+.fileira2{
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+}
+
+#tab{
+    
+    width: 6vw;
+    margin-right: 9px;
+}
+
+#enter{
+    display: flex;
+    position: absolute;
+    justify-self: flex-end;
+    height: 14.7%;
+    width: 6vw;
+    z-index: 1;
+    margin-right: -1px;
+    
+    
+}
+#enter > p{
+    margin: auto;
+}
+
+
+.key{
+    width: 5vw;
+    height: 50px;
+}
+
+
+.fileira3{
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    position: relative;
+}
+
+#caps{
+    width: 7vw;
+    margin-right: 9px;
+}
+
+
+.fileira4{
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+}
+
+#shift{
+    width: 6.5vw;
+    margin-right: 9px;
+}
+#shift2{
+    width: 7.2vw;
+    
+}
+
+
+.fileira5{
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    column-gap: 7px;
+    
+}
+
+#space{
+    width: 21vw;
+    font-size: xx-large;
+    
+}
+
+@media (max-width: 1365px){
+    #enter{
+        height: 15.3%;
+    }
+}
+
+@media (max-width: 907px){
+
+    #shift2{
+        width: 5.8vw;
+    }
+
+    .fileira1{
+        margin-right: 2vw;
+    }
+    .fileira2{
+        margin-right: 2vw;
+    }
+    
+    .fileira3{
+        margin-right: 2vw;
+    }
+    .fileira4{
+        margin-right: 2vw;
+    }
+    .fileira1 > div, .fileira2 > div, .fileira3 > div, .fileira4 > div, .fileira5 > div{
+        
+            font-size: 1.9vw;
+        }
+    
+
+}
+
+@media (max-width: 845px){
+    #shift2{
+        width: 6vw;
+    }
+}
+
+@media (max-width: 765px){
+
+
+    .keyboard{
+        padding: 30px 80px 30px 30px;
+        margin: 0;
+    }
+    
+    .fileira1{
+        margin-right: 5vw;
+    }
+    .fileira2{
+        margin-right: 5vw;
+    }
+    
+    .fileira3{
+        margin-right: 5vw;
+    }
+    .fileira4{
+        margin-right: 5vw;
+    }
+    .fileira5{
+        margin-right: 2.1vw;
+    }
+    
+}
+@media (max-width: 620px){
+    .key{
+        height: 40px;
+        
+    }
+    #enter{
+        height: 12.3%;
+    }
+    .keyboard{
+        padding: 30px 100px 30px 30px;
+        margin: 0;
+
+    }
+    .fileira1{
+        margin-right: 7vw;
+    }
+    .fileira2{
+        margin-right: 7vw;
+    }
+    
+    .fileira3{
+        margin-right: 7vw;
+    }
+    .fileira4{
+        margin-right: 6vw;
+    }
+    #space{
+        font-size: x-large;
+    }
+}
+@media (max-width: 570px){
+
+
+    .fileira1 > div, .fileira2 > div, .fileira3 > div, .fileira4 > div, .fileira5 > div{
+        font-size: 1.5vw;
+    }
+
+    .key{
+        height: 40px;
+        
+    }
+
+    #backspace{
+        width: 5vw;
+    }
+    #tab{
+        width: 5vw;
+        margin-right: -10px;
+    }
+    #enter{
+        
+    }
+    #caps{
+        width: 5vw;
+        margin-right: -10px;
+    }
+    #shift{
+        width: 5vw;
+        margin-right: -10px;
+    }
+    #shift2{
+        width: 5vw;
+        
+    }
+    #space{
+        width: 15vw;
+        font-size: x-large;
+    }
+    .fileira1{
+        margin-right: 7vw;
+    }
+    .fileira2{
+        margin-right: 7vw;
+    }
+    
+    .fileira3{
+        margin-right: 7vw;
+    }
+    .fileira4{
+        margin-right: 7vw;
+    }
+}
