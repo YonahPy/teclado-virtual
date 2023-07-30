@@ -10,8 +10,14 @@
 <body>
     <main>
         
-        <button>Teclado Virtual</button>
-        <div class="keyboard">
+        <button onclick="mostrarTeclado()" id="botao">Teclado Virtual</button><br>
+
+        <label for="icolor">Color:  </label>
+        <input type="color" id="icolor">
+
+        <p id="textoDigitado"></p>
+
+        <div class="keyboard" id="teclado">
            <div class="fileira1">
                 <div class="key" onclick="pressKey(this)">Esc</div>
                 <div class="key" onclick="pressKey(this)">'</div>
