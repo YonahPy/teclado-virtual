@@ -41,3 +41,6 @@ teclas.forEach(tecla => {
     textoDigitado.textContent += this.textContent; // Adiciona o texto da tecla clicada ao texto já existente na tela
     });
 });
+
+
+
