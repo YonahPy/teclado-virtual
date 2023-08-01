@@ -1,44 +1,3 @@
-function handleSpecialKeys(key) {
-    const capsLockKey = document.querySelector('[data-key="caps"]');
-    const textoDigitado = document.getElementById('textoDigitado');
-  
-    switch (key) {
-        case "caps":
-            capsLockKey.classList.toggle('active');
-            textoDigitado.classList.toggle('caps-on');
-            break;
-  
-        case "space":
-            textoDigitado.textContent += " ";
-            break;
-    
-        case "backspace":
-            textoDigitado.textContent = textoDigitado.textContent.slice(0, -1);
-            break;
-    
-        case "enter":
-            textoDigitado.textContent += "\n";
-            break;
-    
-        // Outras teclas especiais aqui
-    
-        default:
-            break;
-    }
-  }
-  
-
-function pressKey(element) {
-   const key = element.getAttribute('data-key');
-    console.log(key);
-  
-  handleSpecialKeys(key);
-    element.classList.add('pressed');
-    setTimeout(() => {
-         element.classList.remove('pressed');
- }, 100); 
-}
-
 let teclado_visivel = true
 function mostrarTeclado() {
     const teclado = document.getElementById('teclado');
@@ -66,22 +25,67 @@ inputCor.addEventListener('input', function() {
     });
 
 
+// JavaScript
+// Função para adicionar o texto correspondente à tecla clicada ao elemento "textoDigitado"
+function adicionarTexto(tecla) {
+    const textoDigitado = document.getElementById('textoDigitado');
+    textoDigitado.textContent += tecla.textContent;
+}
 
+// Função para tratar as teclas especiais
+function handleSpecialKeys(tecla) {
+    const textoDigitado = document.getElementById('textoDigitado');
+  
+    switch (tecla.dataset.key) {
+        case "caps":
+            tecla.classList.toggle('active');
+            break;
+
+        case "space":
+            textoDigitado.textContent += " ";
+            break;
+
+        case "backspace":
+            textoDigitado.textContent = textoDigitado.textContent.slice(0, -1);
+            break;
+
+        case "enter":
+            textoDigitado.textContent += "\n";
+            break;
+
+        // Adicione outras teclas especiais aqui, se necessário
+
+        default:
+            break;
+    }
+}
+
+// Função para tratar o clique nas teclas
+function pressKey(element) {
+    const tecla = element;
+    tecla.classList.add('pressed');
+    setTimeout(() => {
+        tecla.classList.remove('pressed');
+    }, 100);
+
+    // Verifica se a tecla é especial ou não e chama a função adequada
+    if (["caps", "space", "backspace", "enter"].includes(tecla.dataset.key)) {
+        handleSpecialKeys(tecla);
+    } else {
+        adicionarTexto(tecla);
+    }
+}
+
+// Obtém todas as teclas e adiciona o evento de clique a cada uma delas
 const teclas = document.querySelectorAll('.key');
-
 teclas.forEach(tecla => {
     tecla.addEventListener('click', function() {
-    const key = this.getAttribute('data-key');
-    
-    
-    if (["caps", "space", "backspace", "enter"].includes(key)) {
-        handleSpecialKeys(key);
-    } else {
-        const textoDigitado = document.getElementById('textoDigitado');
-        textoDigitado.textContent += this.textContent;
-    }
+        pressKey(this); // "this" representa a tecla que foi clicada
     });
 });
+
+
+
 
 
 

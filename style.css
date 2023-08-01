@@ -60,17 +60,6 @@ button{
 }
 
 
-  
-#textoDigitado {
-    text-transform: none; /* Texto normal */
-  }
-  
-#textoDigitado.caps-on {
-    text-transform: uppercase;
-    background-color: var(--verde-forte);
-    color: white;
-  }
-
 .fileira1 > div, .fileira2 > div, .fileira3 > div, .fileira4 > div, .fileira5 > div{
     display: grid;
     align-items: center;
